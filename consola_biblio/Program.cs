@@ -32,8 +32,8 @@ namespace consola_biblio
             //Modelo.consultas.addCopia(new Modelo.entidades.Copias("buen estado", 1), 2);
             //Modelo.entidades.Usuario us =Modelo.consultas.isUsuario("osc", "123");
             //Console.WriteLine(us.codigo);
-            ArrayList al =Modelo.consultas.isObraMovil("quijote");
-            Console.ReadKey();
+            //ArrayList al =Modelo.consultas.isObraMovil("quijote");
+            //Console.ReadKey();
 
         }
     }

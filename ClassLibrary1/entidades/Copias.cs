@@ -30,6 +30,10 @@ namespace Modelo.entidades
             this.estado = estado;
         }
 
+        public Copias()
+        {
+        }
+
         public int n_copia { get; set; }
         public int id_obra { get; set; }
         public string comentarios { get; set; }

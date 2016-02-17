@@ -213,6 +213,27 @@ namespace Modelo
             }
         }
 
+        public static entidades.Autores isAutor(string nombre )
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=ROV-PC\sqlexpress;Initial Catalog=prueba;Persist Security Info=True;User ID=Oscar;Password=123456");
+            conn.Open();
+            string SQL = "SELECT [id_autor],[nombre],[apellidos],[año] FROM [prueba].[dbo].[Autores] WHERE [nombre]='" + nombre + "'";
+            SqlCommand cmd = new SqlCommand(SQL, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Read();
+                entidades.Autores autor1 = new entidades.Autores(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetDateTime(3));
+                conn.Close();
+                return autor1;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
 
         public static entidades.Catalogo isCatalogo(string nombre)
         {

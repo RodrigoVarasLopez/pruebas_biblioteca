@@ -9,6 +9,8 @@ namespace Modelo.entidades
     [Serializable]
     public class Autores
     {
+        private string nombreAutor;
+
         public Autores(string nombre, string apellidos, DateTime año)
         {
             this.nombre = nombre;
@@ -22,6 +24,11 @@ namespace Modelo.entidades
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.año = año;
+        }
+
+        public Autores(string nombreAutor)
+        {
+            this.nombreAutor = nombreAutor;
         }
 
         public int id_autor { get; set; }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalogo biblioteca="BIB00001" id="CAT00001">
+	<Info>
+		<Version>1.0</Version>
+		<Fecha>2015-01-01 12:00:00</Fecha>
+	</Info>
+	<Obras>
+		<Obra categoria="tecnica" tipo="libro" copias="5">
+			<Titulo>Programación ASP.NET</Titulo>
+			<Autores>
+				<Autor>Juan Sánchez Pérez</Autor>
+				<Autor>Miguel Sánchez Pérez</Autor>
+			</Autores>
+			<FechaPublicacion>2015-01-01 12:00:00</FechaPublicacion>
+			<NumeroPaginas>345</NumeroPaginas>
+			<Editorial>RA-MA</Editorial>
+			<Edicion>2</Edicion>			
+			<Isbn>11111111111</Isbn>
+		</Obra>
+		<Obra categoria="poesia" tipo="audiovisual" subtipo="cd" copias="3">
+			<Titulo>Mil poemas narrados</Titulo>
+			<Autores>
+				<Autor>Sara San Miguel</Autor>
+			</Autores>
+			<FechaPublicacion>2015-01-01 12:00:00</FechaPublicacion>
+			<Duracion>120</Duracion>
+			<Productora>Audiovisual S.A</Productora>
+		</Obra>
+	</Obras>
+</Catalogo>

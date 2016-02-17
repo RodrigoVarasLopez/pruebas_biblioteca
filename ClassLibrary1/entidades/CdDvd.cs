@@ -15,7 +15,12 @@ namespace Modelo.entidades
             this.duracion = duracion;
         }
 
+        public CdDvd(string duracion)
+        {
+            this.duracion = duracion;
+        }
+
         public int id_obra { get; set; }
-        public float duracion { get; set; }
+        public string duracion { get; set; }
     }
 }
